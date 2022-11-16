@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(137, 197, 197);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 70vw;
+    max-height: 80vh ;
+    overflow: hidden;
+}
+
+.left-side{
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+}
+
+.logo{
+    background-color: transparent;
+    color: red;
+    font-size: small;
+    margin-bottom: 3rem;
+}
+
+.logo img{
+    width: 50%;
+}
+
+form h2{
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+input[type=text], input[type=password] {
+    padding:.7rem 1rem;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(87, 87, 87, 0.158);
+}
+
+input[type=text]{
+    margin-bottom: .5rem;
+}
+
+input[type=password]{
+    margin-bottom: 1rem;
+}
+
+.social-buttons{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    gap:.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-buttons button{
+    width: 100%;
+    padding:.3rem 0;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.social-buttons :nth-child(1)
+{
+    background-color: rgb(49, 108, 236);
+    color: white;
+}
+
+.social-buttons :nth-child(2)
+{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(128, 128, 128, 0.144);
+}
+.social-buttons :nth-child(2) i{
+    color: black;
+    background-color: transparent;
+}
+
+.social-buttons :nth-child(3)
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.social-buttons :nth-child(3) i{
+    background-color: transparent;
+}
+
+.radio{
+    text-align: left;
+    margin-bottom: 6rem;
+    font-size: small;
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+}
+
+.bottom-part{
+    position: relative;
+    bottom: 0;
+}
+
+.login-btn{
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    color: rgba(128, 128, 128, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: .3s ease;
+}
+
+.login-btn.ready{
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.questions{
+    position: relative;
+    background-color: transparent;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.555);
+}
+
+.ver{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgba(177, 174, 174, 0.466);
+}
+
+.questions a:hover{
+    color: rgb(66, 66, 66);
+}
+
+
+
+.right-side{
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    background-image: url(/imgs/Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infos-hover{
+    position: absolute;
+    background-color: rgb(231, 60, 217);
+    height: 35px;
+    width: 35px;
+    top: 40px;
+    left: 20px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.infos-hover i{
+    transform: rotate(-45deg);
+}
+
+.infos-pop{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 100px;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 35%;
+}
+
+.infos-pop::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: 45px;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.infos-pop h2{
+    font-size: medium;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: .6rem 0;
+    font-size: small;
+    color: gray;
+}
+
+.desc{
+    margin-bottom: 1rem;
+}
+
+.infos-pop a{
+    background-color: transparent;
+    font-size: small;
+    font-weight: bold;
+}
+
+.window-btns{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: gray;
+    font-size: small;
+}
+
+.minimize{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    padding: .1rem;
+    transition: .1s ease;
+}
+
+.minimize:hover{
+    background-color: rgba(209, 209, 209, 0.596);
+    color: white;
+}
+
+.exit{
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    padding: .1rem;
+    transition: .1s ease;
+}
+
+.exit:hover{
+    background-color: rgba(255, 0, 0, 0.493);
+    color: white;
+}
+
+.personal{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    background-color: rgba(240, 248, 255, 0.137);
+    height: 45px;
+    width: 45px;
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
+    color:  rgba(240, 248, 255, 0.712);
+    cursor: pointer;
+    box-shadow: rgba(24, 24, 24, 0.2) 0px 8px 24px;
+}
+
+.personal-pop
+{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background-color: rgb(29, 28, 28); 
+    padding: 1.6rem 2rem;  
+    text-align: start;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    margin: .4rem;
+    color: rgba(255, 255, 255, 0.658);
+    font-weight: bold;
+    font-size: small;
+    padding: .4rem 1rem;
+    border-radius: 7px;
+    transition: .3s ease;
+}
+
+.links a:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.links a.disabled{
+    color: rgba(255, 255, 255, 0.2);
+    
+}.links a.disabled:hover{
+    background-color: transparent;
+}
+

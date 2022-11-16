@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Login Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="logo">
+                <img src="/imgs/logocerto.png" alt="">
+            </div>
+            <div class="login-area">
+                <form>
+                    <h2>Fazer login</h2>
+                    <input type="text" required placeholder="Nome de Usuário" name="login">
+                    <input type="password" placeholder="Senha" name="password">
+                    <div class="social-buttons">
+                        <button>
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+                        <button>
+                            <i class="fa-brands fa-google"></i>
+                        </button>
+                        <button>
+                            <i class="fa-brands fa-apple"></i>
+                        </button>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="record">
+                        <label for="record">Manter Login</label>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-part">
+                <button class="login-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="questions">
+                    <a href="">Não consegue iniciar Sessão</a>
+                    <a href="">Criar Conta</a>
+                    <a class="ver" href="">V60.0.6</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="window-btns">
+                <a class="minimize" href=""><i class="fa-solid fa-window-minimize"></i></a>
+                <a class="exit" href=""><i class="fa-solid fa-x"></i></a>
+            </div>
+           <!-- <div class="img"></div> --> 
+            <img src="/imgs/Bg.jpg" alt="">
+            <div class="infos-hover">
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="infos-pop hide">
+                <div class="notify">
+                    <h2>Bug na compra de eternos serie 2</h2>
+                    <div class="date">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>16/11/2022</p>
+                        <p>06:22</p>
+                    </div>
+                    <p class="desc">Está ocorrendo um erro Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sequi voluptas eligendi quasi itaque ut illo tenetur rerum ab possimus.</p>
+                    <a href="">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="personal">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="personal-pop hide">
+                <div class="links">
+                    <a href="">CONFIGURAÇÕES</a>
+                    <a class="disabled" href="">ENCERRAR SESSÃO</a>
+                    <a href="">SAIR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
