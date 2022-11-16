@@ -53,20 +53,59 @@ form h2{
     margin-bottom: 1rem;
 }
 
-input[type=text], input[type=password] {
-    padding:.7rem 1rem;
-    border-radius: 3px;
-    border: none;
-    background-color: rgba(87, 87, 87, 0.158);
-}
-
-input[type=text]{
+.input-box{
+    position: relative;
+    background-color: rgba(0, 255, 255, 0);
     margin-bottom: .5rem;
 }
 
-input[type=password]{
-    margin-bottom: 1rem;
+.see-password{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
 }
+
+.see-password i{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#password:focus ~ .see-password  {
+    opacity: 1;
+}
+
+.labelInput{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    pointer-events: none;
+    transition: .2s;
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.596);
+    font-weight: bold;
+}
+
+.inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: 8px;
+            left: 4px;
+            font-size: 8px;
+        }
+
+input[type=text], input[type=password] {
+    padding:.8rem 1rem;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(136, 136, 136, 0.158);
+}
+
 
 .social-buttons{
     width: 100%;
@@ -74,7 +113,7 @@ input[type=password]{
     display: flex;
     justify-content: space-between;
     gap:.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .social-buttons button{
@@ -138,8 +177,13 @@ input[type=password]{
 
 .login-btn.ready{
     color: white;
-    background-color: red;
+    background-color: rgb(207, 29, 29);
     border: none;
+    transition: .3s ease;
+}
+
+.login-btn.ready:hover{
+    background-color: rgb(148, 11, 11);
 }
 
 .questions{
@@ -196,7 +240,13 @@ img{
     display: grid;
     place-content: center;
     cursor: pointer;
+    transition: .3s ease;
 }
+
+.infos-hover:hover{
+    background-color: rgb(143, 22, 107);
+}
+
 .infos-hover i{
     transform: rotate(-45deg);
 }
@@ -292,6 +342,11 @@ img{
     color:  rgba(240, 248, 255, 0.712);
     cursor: pointer;
     box-shadow: rgba(24, 24, 24, 0.2) 0px 8px 24px;
+    transition: .3s ease;
+}
+
+.personal:hover{
+    background-color: rgba(240, 248, 255, 0.4)
 }
 
 .personal-pop

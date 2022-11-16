@@ -7,6 +7,7 @@
     <title>Riot Login Clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -17,8 +18,27 @@
             <div class="login-area">
                 <form>
                     <h2>Fazer login</h2>
-                    <input type="text" required placeholder="Nome de Usuário" name="login">
-                    <input type="password" placeholder="Senha" name="password">
+                    <div class="input-box">
+                        <input class="inputUser" type="text" required name="login" id="login">
+                        <label class="labelInput" for="login">NOME DE USUÁRIO</label>
+                    </div>
+                    <div class="input-box">
+                        <input class="inputUser" type="password" required  name="password" id="password">
+                        <label class="labelInput" for="password">SENHA</label>
+
+                        <div id="see-password" class="see-password">
+
+                            <div id="see" class="">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div id="notsee" class="hide">
+                                <i class="fa-sharp fa-solid fa-eye-slash"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
                     <div class="social-buttons">
                         <button>
                             <i class="fa-brands fa-facebook"></i>
@@ -37,7 +57,7 @@
                 </form>
             </div>
             <div class="bottom-part">
-                <button class="login-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="login-btn" class="login-btn"><i class="fa-solid fa-arrow-right"></i></button>
                 <div class="questions">
                     <a href="">Não consegue iniciar Sessão</a>
                     <a href="">Criar Conta</a>
@@ -53,10 +73,10 @@
             </div>
            <!-- <div class="img"></div> --> 
             <img src="/imgs/Bg.jpg" alt="">
-            <div class="infos-hover">
+            <div id="infos-btn" class="infos-hover">
                 <i class="fa-solid fa-exclamation"></i>
             </div>
-            <div class="infos-pop hide">
+            <div id="infos-pop" class="infos-pop hide">
                 <div class="notify">
                     <h2>Bug na compra de eternos serie 2</h2>
                     <div class="date">
@@ -68,10 +88,10 @@
                     <a href="">Saiba Mais</a>
                 </div>
             </div>
-            <div class="personal">
+            <div id="personal-btn" class="personal">
                 <i class="fa-solid fa-user"></i>
             </div>
-            <div class="personal-pop hide">
+            <div id="personal-pop" class="personal-pop hide">
                 <div class="links">
                     <a href="">CONFIGURAÇÕES</a>
                     <a class="disabled" href="">ENCERRAR SESSÃO</a>
