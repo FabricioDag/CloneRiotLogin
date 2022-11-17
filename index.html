@@ -16,7 +16,7 @@
                 <img src="https://fabriciodag.github.io/CloneRiotLogin/imgs/logocerto.png" alt="">
             </div>
             <div class="login-area">
-                <form>
+                <form method="POST" action="processa.php">
                     <h2>Fazer login</h2>
                     <div class="input-box">
                         <input class="inputUser" type="text" required name="login" id="login">
@@ -54,6 +54,7 @@
                         <input type="radio" name="record">
                         <label for="record">Manter Login</label>
                     </div>
+                    <input type="submit" value="Login">
                 </form>
             </div>
             <div class="bottom-part">
