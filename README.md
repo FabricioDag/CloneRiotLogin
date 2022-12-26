@@ -1,5 +1,7 @@
 # CloneRiotLogin
 
+
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,9 +14,12 @@
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+EDUCATIONAL PROJECT DO NOT USE FOR ILLEGAL PURPOSES
+
+I DO NOT OWN ANY RIGHTS OF RIOT GAMES DESIGNS
 
 ### The Project
 
