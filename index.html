@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Login Clone</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/shorticon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="topPart">
+                <div class="logo">
+                    <img src="./imgs/logocerto.png" alt="Riot Logo">
+                </div>
+                <div class="loginArea">
+                    <form>
+                        <h2 class="formTitle">Fazer login</h2>
+                        <div class="input-box">
+                            <input class="inputUser" type="text" required name="login" id="login">
+                            <label class="labelInput" for="login">NOME DE USUÁRIO</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="inputUser" type="password" required  name="password" id="password">
+                            <label class="labelInput" for="password">SENHA</label>
+    
+                            <div id="see-password" class="see-password">
+    
+                                <div id="see" class="">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div id="notsee" class="hide">
+                                    <i class="fa-sharp fa-solid fa-eye-slash"></i>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+                        
+                        <div class="social-buttons">
+                            <button class="facebookBtn">
+                                <i class="fa-brands fa-facebook"></i>
+                            </button>
+    
+                            <button class="googleBtn">
+                                <i class="fa-brands fa-google"></i>
+                            </button>
+                            <button class="appleBtn">
+                                <i class="fa-brands fa-apple"></i>
+                            </button>
+                            
+                        </div>
+                        <div class="stayLogged">
+                            <div class="stayloggedRadio" name="record"></div>
+                            <label for="record">Manter login</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottomPart">
+
+                <button id="login-btn" class="loginBtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="questions">
+                    <a>Não consegue iniciar Sessão?</a>
+                    <a>Criar Conta</a>
+                    <a class="ver">V60.0.6</a>
+                </div>
+                <p class="disclaimer">Este aplicativo é protegido por hcaptcha, a politica de privacidade e os termos de serviço são aplicaveis</p>
+            </div>
+        </div>
+
+        <div class="right-side">
+
+            <div class="window-btns">
+                <a class="minimize" href=""><i class="fa-solid fa-window-minimize"></i></a>
+                <a class="exit" href=""><i class="fa-solid fa-x"></i></a>
+            </div>
+           
+            <img src="./imgs/ActualBg.png" alt="">
+
+            <div id="infos-btn" class="infosBtn">
+                <div class="iconBox">
+                    <i class="fa-solid fa-exclamation"></i>
+                </div>
+                <p class="infosText">3 atualizações de status</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="legalAdvise">
+        <p>
+            <span>Aviso Legal:</span> Este não é o site oficial e tem propósito apenas educacional. Utiliza designs de terceiros para este fim, mantendo os direitos autorais com seus respectivos proprietários.
+        </p>
+    </div>
+</body>
+</html>
