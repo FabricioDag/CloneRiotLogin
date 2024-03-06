@@ -1,35 +1,26 @@
-const loginBtn =  document.getElementById("login-btn")
-var login = document.getElementById("login")
-var password = document.getElementById("password")
+const infosBtn = document.querySelector(".infosBtn")
+let modalInfos = document.querySelector(".modalInfos")
 
-function validate(){
-    if(login.value != "" && password.value != ""){
-        loginBtn.classList.add("ready")
-    }else{
-        loginBtn.classList.remove("ready")
+const userBtn = document.querySelector(".userBtn")
+let modalUser = document.querySelector(".modalUser")
+
+let activeModal = ''
+
+const toggleHide = (modal) => {
+    modal.classList.toggle('hide')
+
+    if(activeModal != '' && activeModal != modal){
+        activeModal.classList.toggle('hide')
     }
+    
+    activeModal = modal
 }
 
-password.addEventListener("mousemove",() =>{
-    validate()
+infosBtn.addEventListener('click', function(){
+    toggleHide(modalInfos)
 })
 
-const seeBtn = document.getElementById("see-password")
-const seeIcon = document.getElementById("see")
-const notseeIcon = document.getElementById("notsee")
-
-seeBtn.addEventListener("click",() =>{
-    seeIcon.classList.toggle("hide")
-    notseeIcon.classList.toggle("hide")
-    password.focus()
-    toggleVisibility()
+userBtn.addEventListener('click', function(){
+    toggleHide(modalUser)
 })
 
-function toggleVisibility() {
-    var password = document.getElementById("password");
-    if (password.type === "password") {
-      password.type = "text";
-    } else {
-      password.type = "password";
-    }
-  }
